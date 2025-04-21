@@ -1,6 +1,7 @@
 #!/bin/bash
 mkdir -p "$PWD/workdir/cover_letters"
 chmod -R 777 "$PWD/workdir/cover_letters"
+cp .env "$PWD/workdir/.env"
 
 # Run the agent in a Docker container with read-only filesystem and tmpfs
 
