@@ -38,15 +38,19 @@ Dockerfile                   # Docker build instructions
 ## How to Run
 
 1. **Configure your environment:**
+   - Copy `.env.example` to `.env`:
+   ```
+   cp .env.example .env
+   ```
    - Edit `.env` with your API key and endpoint.
    - Edit `workdir/prompts/config.yaml` with your candidate and job details.
 
-2. **Build the Docker image (if not already built):**
+3. **Build the Docker image (if not already built):**
    ```
    docker build -t llm-agent-safe .
    ```
 
-3. **Run the agent:**
+4. **Run the agent:**
    ```
    ./run.sh
    ```
@@ -65,6 +69,7 @@ Dockerfile                   # Docker build instructions
 
 - The agent is designed for security and privacy; it does not expose your API key or data outside the container.
 - Generated cover letters are saved in Markdown format for easy editing or conversion to PDF.
+- You can convert the Markdown files to PDF using tools like [md2pdf](https://github.com/jmaupetit/md2pdf) or Pandoc.
 
 ## License
 
