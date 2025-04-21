@@ -1,0 +1,28 @@
+
+company:
+  name: "Apple"
+  location: "San Francisco, CA"
+  field: "Technology"
+  position: "Software Engineer"
+  description: "Join our dynamic team to develop cutting-edge software solutions."
+  requirements:
+    - "Bachelor's degree in Computer Science or related field"
+    - "3+ years of experience in software development"
+    - "Proficiency in Python and JavaScript"
+
+candidate:
+  name: "John Doe"
+  email: "max.mastermann@gmail.com"
+  phone: "+1-234-567-8900"
+  address: "123 Main St, San Francisco, CA"
+  years_experience: 5
+  highlight_skills:
+      - "python"
+      - "docker"
+      - "api development"
+
+templates:
+  cover_letter:
+    format: "standard"
+    max_length: 400
+    
